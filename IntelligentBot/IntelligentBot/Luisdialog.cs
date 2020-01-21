@@ -20,7 +20,7 @@ using System.IO;
 
 namespace IntelligentBot
 {
-    [LuisModel("d2b99cf8-c5ac-4da5-9c63-0e5721961733", "e44ae558274344a5b5627214291f14bb")]
+    [LuisModel("********************************", "***********************************")]
     [Serializable]
     public class Luisdialog : LuisDialog<object>
     {
@@ -39,7 +39,7 @@ namespace IntelligentBot
                 reply.Attachments = new List<Microsoft.Bot.Connector.Attachment>();
 
                 city = rec.Entity;
-                string url = "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&mode=xml&units=metric&appid=9f0decf846c05e95ceffdf93c0d8f674";
+                string url = "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&mode=xml&units=metric&appid=5cef78776888888****74";
                 var xml = await new WebClient().DownloadStringTaskAsync(new Uri(url));
                 doc.LoadXml(xml);
 
@@ -78,7 +78,7 @@ namespace IntelligentBot
             if(result.TryFindEntity("text",out rec))
             {
                 typedtext = rec.Entity;
-                string url = "https://dictionary.yandex.net/api/v1/dicservice.json/lookup?key=dict.1.1.20170224T064309Z.79a2fb69029ae1e8.95e15b644992fabba9bce97545094247a1b5621d&lang=en-en&text="+typedtext;
+                string url = "https://dictionary.yandex.net/api/v1/dicservice.json/lookup?key=dict.1.1.2*************************8.95e787b644992fabba9bce97545094247a1b5621d&lang=en-en&text="+typedtext;
                 HttpClient http = new HttpClient();
                 var response = await http.GetStringAsync(new Uri(url));
                 JObject jo = JObject.Parse(response);
@@ -173,7 +173,7 @@ namespace IntelligentBot
 
         public async Task<string> getcaption(String url)
         {
-            VisionServiceClient vision = new VisionServiceClient("ecfba9104a6243c99d82fa9a09d2072c");
+            VisionServiceClient vision = new VisionServiceClient("****************************************");
 
 
             VisualFeature[] visual = new VisualFeature[] { VisualFeature.Description };
