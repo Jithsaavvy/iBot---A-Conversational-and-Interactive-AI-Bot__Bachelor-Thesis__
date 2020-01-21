@@ -10,7 +10,7 @@ using System.Web;
 
 namespace IntelligentBot
 {
-    [LuisModel("1943292b-272b-43d4-8644-bc088cf2a9cd", "e44ae558274344a5b5627214291f14bb")]
+    [LuisModel("******************************", "***************************************")]
     [Serializable]
     public class Luiss : LuisDialog<object>
     {
