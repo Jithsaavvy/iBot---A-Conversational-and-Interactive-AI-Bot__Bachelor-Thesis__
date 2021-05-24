@@ -2,7 +2,7 @@
 
 Intelligent Bot [iBot] is a programmed application that performs an automated task in a conversational format. It is similar to that of chatbots available now a days. It is facilitated by Microsoft Bot Framework that consists of Bot Builder SDK,  Bot Connector, Bot Emulator. Language Understanding Intelligent Systems (LUIS) is incorporated for natural language processing [NLP] to give the bot more human like senses. Cognitive Services are API’s that provides an efficient way for the bot to be more interactive and better user experience. REST API is used to host the bot into an app or a website by returning JSON objects and the bot is programmed by C# & .NET libraries. 
 
-iBot was developed using supervised learning [ML Paradigm] and Natural Language Processing [NLP] along with computer vision like face detection ,emotion detection, predicting captions. 
+iBot was developed by harnessing Deep Learning and Natural Language Processing [NLP] with ASR, NLU, NLG, cognitive sciences as a Dialog System.
 
 # Existing System: 
 In Existing System, Bots are currently emerging technologies. Chatbots like ELIZA, ALICE uses only some predefined commands . 
